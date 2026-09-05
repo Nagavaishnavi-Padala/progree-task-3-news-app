@@ -1,17 +1,116 @@
-# progree_task_3_news_app
+\# Progree Task 3 - News Feed App
 
-A new Flutter project.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+A Flutter-based mobile news feed application that fetches remote JSON content asynchronously and displays it in a responsive, scrollable interface.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+\## Task Objective
+
+
+
+Build a data-bound mobile application frontend that asynchronously fetches remote JSON data, displays the content in a scrollable layout, handles offline states, and uses clean state management.
+
+
+
+\## Features
+
+
+
+\- Fetches articles from a remote REST API
+
+\- Displays articles in a scrollable feed
+
+\- Pull-to-refresh support
+
+\- Refresh button in the app bar
+
+\- Loading state while fetching data
+
+\- Offline/network error handling
+
+\- Retry functionality after a failed request
+
+\- Responsive Material 3 user interface
+
+\- Provider-based state management
+
+\- Separate model, service, provider, screen, and widget layers
+
+
+
+\## Tech Stack
+
+
+
+\- Flutter
+
+\- Dart
+
+\- HTTP
+
+\- Provider
+
+\- REST API
+
+\- JSON
+
+\- Material 3
+
+
+
+\## API
+
+
+
+The application uses the JSONPlaceholder REST API:
+
+
+
+`https://jsonplaceholder.typicode.com/posts`
+
+
+
+The API returns JSON objects containing:
+
+
+
+\- `id`
+
+\- `title`
+
+\- `body`
+
+
+
+\## Project Architecture
+
+
+
+```text
+
+lib/
+
+├── main.dart
+
+├── models/
+
+│   └── article.dart
+
+├── services/
+
+│   └── api\_service.dart
+
+├── providers/
+
+│   └── article\_provider.dart
+
+├── screens/
+
+│   └── home\_screen.dart
+
+└── widgets/
+
+&#x20;   └── article\_card.dart
+
